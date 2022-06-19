@@ -6,39 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorie Counter</title>
     <script defer src="script.js"></script>
-    <style>
-        input {
-            margin: 1rem;
-        }
-        body {
-            margin: 3rem;
-            font-family: sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<h1 style="padding-bottom: 3rem">Calorie Counter</h1>
-<section id="table">
-    <h2>Daily Consumption</h2>
+<h1 style="padding-bottom: 1rem">Calorie Counter</h1>
+<section>
         <table>
         <tr>
             <th>Item</th>
             <th>Calories</th>
-            <th>Edit</th>
+            <th></th>
         </tr>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td id="total"></td>
+            </tr>
+        </tfoot>
     </table>
 </section>
-
-<section id="form">
-    <h2>Add Item</h2>
-        <form>
-        <label for="item">Item:</label><br>
-        <input type="text" id="item"><br>
-        <label for="calories">Calories:</label><br>
-        <input type="number" id="calories"><br>
-       <input type="submit" value="submit" id="submit">
-    </form>
-</section>
-
+<button id="new-button">Add Item</button>
 </body>
 </html>
