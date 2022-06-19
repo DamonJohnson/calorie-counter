@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <script defer src="script.js"></script>
+    <style>
+        input {
+            margin: 1rem;
+        }
+        body {
+            margin: 3rem;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1 style="padding-bottom: 3rem">Calorie Counter</h1>
+<section id="table">
+    <h2>Daily Consumption</h2>
+        <table>
+        <tr>
+            <th>Item</th>
+            <th>Calories</th>
+            <th>Edit</th>
+        </tr>
+    </table>
+</section>
+
+<section id="form">
+    <h2>Add Item</h2>
+        <form>
+        <label for="item">Item:</label><br>
+        <input type="text" id="item"><br>
+        <label for="calories">Calories:</label><br>
+        <input type="number" id="calories"><br>
+       <input type="submit" value="submit" id="submit">
+    </form>
+</section>
+
+</body>
+</html>
